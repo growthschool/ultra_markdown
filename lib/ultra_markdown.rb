@@ -4,7 +4,7 @@ require "ultra_markdown/syntax_convertor"
 require "ultra_markdown/markdown_snippets"
 
 case ::Rails.version.to_s
-when /^4/
+when /^(4|5)/
   require 'ultra_markdown/engine'
 when /^3\.[12]/
   require 'ultra_markdown/engine3'
